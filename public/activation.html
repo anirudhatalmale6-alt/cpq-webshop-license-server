@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Activation demo — Atlas Store</title>
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<main>
+  <h1>Activation demo</h1>
+  <p class="lead">This page stands in for the customer's installed software. It calls the same public
+    license API your desktop app or server would call, receives a signed token, and then verifies that
+    token locally — the verification below runs entirely in this browser with the published public key,
+    no request to the license server.</p>
+  <div class="split">
+    <div id="left" class="stack"></div>
+    <div id="right" class="stack"></div>
+  </div>
+</main>
+<script type="module" src="/activation.js"></script>
+</body>
+</html>
