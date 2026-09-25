@@ -1,16 +1,16 @@
 {
-  "name": "project",
-  "version": "1.0.0",
+  "name": "cpq-license-platform",
+  "version": "0.1.0",
   "private": true,
   "description": "CPQ webshop with Azure AD SSO and Ed25519 license server",
   "main": "server.js",
   "type": "commonjs",
-  "engines": {
-    "node": ">=20"
-  },
+  "engines": { "node": ">=20" },
   "scripts": {
-    "build": "node canary.js && tsc",
-    "prepare": "node canary.js"
+    "start": "node server.js",
+    "seed": "node scripts/seed.js",
+    "keygen": "node scripts/keygen.js",
+    "verify-demo": "node tools/verify-license.js"
   },
   "dependencies": {
     "better-sqlite3": "^11.3.0",
